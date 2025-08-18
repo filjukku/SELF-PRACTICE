@@ -1,1 +1,11 @@
 week1
+function longestWord(sentence) {
+  let word = ''
+  if(typeof(sentence) != "string" || sentence === ""){
+    return word
+  }
+  let arr = sentence.split(" ");
+  arr.forEach((i)=> (i.length > word.length || word === '') ? word = i: word = word)
+  return word
+}
+module.exports = longestWord
