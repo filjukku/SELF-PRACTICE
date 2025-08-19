@@ -43,3 +43,17 @@ function dosomething(){
 }
 
 console.log(dosomething()())
+
+function myFunc(theObject) {
+theObject.model = "A9999"
+}
+const product = {model: "A1001", price: 199}
+console.log(product.model) // "A1001"
+myFunc(product);
+console.log(product.model) // "A9999"
+
+function getfreqofwords(sentence){
+    let lower = sentence.toLowerCase()
+    let split = lower.split( )
+    
+}
